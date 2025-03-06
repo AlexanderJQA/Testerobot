@@ -1,0 +1,14 @@
+  *** Settings ***
+ library  Selenium library 
+     
+
+   *** test case ***
+   login con user y password 
+   Open Browser    https://opensource-demo.orangehrmlive.com/web/index.php/auth/login    chrome
+    Maximize Browser Window
+     Wait Until Element Is Visible    xpath=//input[@name='username']    10s
+     Input Text    xpath=//input[@name='username']    admin
+     Input Text    xpath=//input[@name='password']    admin123
+     Wait Until Element Is Visible    xpath=//button[@type='submit']    10s
+     Click Button    xpath=//button[@type='submit']
+     Close Browser
