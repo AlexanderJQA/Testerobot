@@ -1,72 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-06T20:27:38.631397" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-06T20:50:56.748270" rpa="false" schemaversion="5">
 <suite id="s1" name="Alexqa" source="C:\Users\alexander.j.sanchez\Pruebaqa\alexqa.robot">
-<test id="s1-t1" name="Login Test2" line="10">
+<test id="s1-t1" name="TestCase1" line="5">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-03-06T20:27:39.064969" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<msg time="2025-03-06T20:50:57.459469" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
 <arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-03-06T20:27:39.064969" elapsed="5.002429"/>
+<status status="PASS" start="2025-03-06T20:50:57.459469" elapsed="4.951769"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-03-06T20:27:44.067398" elapsed="0.026777"/>
+<status status="PASS" start="2025-03-06T20:51:02.412749" elapsed="0.022525"/>
+</kw>
+<status status="PASS" start="2025-03-06T20:50:57.457927" elapsed="4.978355"/>
+</test>
+<test id="s1-t2" name="Login Test2" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-06T20:51:02.436786" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-06T20:51:02.436786" elapsed="3.735226"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-06T20:51:06.172012" elapsed="1.034510"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='username']</arg>
 <arg>10s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-06T20:27:44.094175" elapsed="0.248020"/>
+<status status="PASS" start="2025-03-06T20:51:07.207027" elapsed="0.289516"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-06T20:27:44.343201" level="INFO">Typing text 'admin' into text field 'xpath=//input[@name='username']'.</msg>
+<msg time="2025-03-06T20:51:07.497056" level="INFO">Typing text 'admin' into text field 'xpath=//input[@name='username']'.</msg>
 <arg>xpath=//input[@name='username']</arg>
 <arg>admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-06T20:27:44.343201" elapsed="0.077204"/>
+<status status="PASS" start="2025-03-06T20:51:07.497056" elapsed="0.097541"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-03-06T20:27:44.421919" level="INFO">Typing text 'admin123' into text field 'xpath=//input[@name='password']'.</msg>
+<msg time="2025-03-06T20:51:07.595542" level="INFO">Typing text 'admin123' into text field 'xpath=//input[@name='password']'.</msg>
 <arg>xpath=//input[@name='password']</arg>
 <arg>admin123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-06T20:27:44.421413" elapsed="0.100956"/>
+<status status="PASS" start="2025-03-06T20:51:07.594597" elapsed="0.096487"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>css:.oxd-button.oxd-button--main</arg>
 <arg>5s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-03-06T20:27:44.522369" elapsed="0.014828"/>
+<status status="PASS" start="2025-03-06T20:51:07.691084" elapsed="0.019449"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-03-06T20:27:44.538750" level="INFO">Clicking button 'css:.oxd-button.oxd-button--main'.</msg>
+<msg time="2025-03-06T20:51:07.712051" level="INFO">Clicking button 'css:.oxd-button.oxd-button--main'.</msg>
 <arg>css:.oxd-button.oxd-button--main</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-03-06T20:27:44.537197" elapsed="0.835997"/>
+<status status="PASS" start="2025-03-06T20:51:07.712051" elapsed="0.901131"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-03-06T20:27:48.373638" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-03-06T20:51:11.613381" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-03-06T20:27:45.373194" elapsed="3.000444"/>
+<status status="PASS" start="2025-03-06T20:51:08.613182" elapsed="3.000199"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-03-06T20:27:48.374143" elapsed="3.476311"/>
+<status status="PASS" start="2025-03-06T20:51:11.613381" elapsed="4.410403"/>
 </kw>
-<status status="PASS" start="2025-03-06T20:27:39.063431" elapsed="12.788640"/>
+<status status="PASS" start="2025-03-06T20:51:02.436786" elapsed="13.588013"/>
 </test>
-<status status="PASS" start="2025-03-06T20:27:38.641731" elapsed="13.211867"/>
+<status status="PASS" start="2025-03-06T20:50:56.756026" elapsed="19.270296"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Alexqa" id="s1" pass="1" fail="0" skip="0">Alexqa</stat>
+<stat name="Alexqa" id="s1" pass="2" fail="0" skip="0">Alexqa</stat>
 </suite>
 </statistics>
 <errors>
