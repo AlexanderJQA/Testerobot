@@ -1,0 +1,11 @@
+*** Settings ***
+Library  SeleniumLibrary
+
+*** Test Cases ***
+TesteCase1
+    Open Browser    https://opensource-demo.orangehrmlive.com/web/index.php/auth/login  Chrome
+    Sleep   5s
+    Maximize Browser Window
+    Closse browser
+
+

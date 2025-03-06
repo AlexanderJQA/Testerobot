@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.8 on win32)" generated="2025-03-06T20:05:04.214882" rpa="false" schemaversion="5">
+<suite id="s1" name="Alexqa" source="C:\Users\alexander.j.sanchez\Pruebaqa\Alexqa.robot">
+<test id="s1-t1" name="TestCase1" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-06T20:05:04.885081" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-06T20:05:04.885081" elapsed="7.272692"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-03-06T20:05:12.159311" elapsed="0.031100"/>
+</kw>
+<status status="PASS" start="2025-03-06T20:05:04.884579" elapsed="7.305832"/>
+</test>
+<status status="PASS" start="2025-03-06T20:05:04.223502" elapsed="7.968425"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Alexqa" id="s1" pass="1" fail="0" skip="0">Alexqa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
